@@ -1,0 +1,67 @@
+{{{img}}}
+<a href="http://connellmccarthy.com/" target="_blank" class="copyright">Photography by Connell McCarthy</a>
+
+<div id="more">
+    <a class="clicky" href="#" onclick="expand()"><span>About</span></a>
+    <div class="padding-wrapper special-formatting">
+        <h2 class="title-spacing">What Is Futurebound?</h2>
+        <hr>
+        <p>
+            <span class="first">Futurebound</span> is a meme.
+        </p>
+    </div>
+</div>
+
+<div class="login">
+    <div class="top">
+        <h1>Future<br>
+            bound</h1>
+    </div>
+    <div class="bottom">
+        <input id="token" type="text" value="" placeholder="Enter Your Token">
+        <a href="#" id="submit" onclick="sendToken()">Submit</a>
+        <div id="token-spinner" class="spinner animate-opacity" style="opacity: 0;"></div>
+    </div>
+</div>
+
+<script>
+    function expand() {
+        var more = document.getElementById('more');
+        if (!more.classList.contains('expanded')) {
+            more.style.transform = 'translateX(0)';
+            more.classList.add('expanded');
+        } else {
+            more.style.transform = 'translateX(calc(-100% + 100px))';
+            more.classList.remove('expanded');
+        }
+    }
+
+    function sendToken() {
+        var spinner = document.getElementById('token-spinner');
+        /*var token = document.getElementById('token');
+        var meme = document.getElementsByClassName('info');
+        var req = new XMLHttpRequest();
+        var url = location.origin + '/api/whoami';*/
+
+        spinner.style.opacity = '1';
+
+        /*req.onreadystatechange = function() {
+            if (req.readyState === 4) {
+                if (req.status === 200) {
+                    meme.innerHTML = 'sweet';
+                } else {
+                    meme.innerHTML = "awa";
+                }
+
+                fade(spinner, true);
+            } else if (req.readyState < 1) {
+                meme.innerHTML = req.status;
+                fade(spinner, true);
+            }
+        }
+
+        req.open('POST', url);
+        req.setRequestHeader('Authorization', token.value);
+        req.send();*/
+    }
+</script>

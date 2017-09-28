@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Futurebound</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if IE]>
+            <div class="ie-notif"><div>
+                FUTUREBOUND DOES NOT SUPPORT INTERNET EXPLORER.<br>
+                Especially this shit version.<br>
+                Please, for the love of god, upgrade to some that's actually good and supported,<br>
+                like Google Chrome or Mozilla Firefox.
+            </div></div>
+        <-->
+        {{{body}}}
+        <script>
+            if (navigator.appName === 'Microsoft Internet Explorer' || navigator.userAgent.indexOf('Trident/') !== -1) {
+                console.log('idiot');
+                document.body.innerHTML = '<div class="ie-notif"><div>FUTUREBOUND DOES NOT SUPPORT INTERNET EXPLORER.<br>Please, for the love of god, upgrade to some that\'s actually good and supported,<br>like Google Chrome or Mozilla Firefox.</div></div>'
+            }
+        </script>
+    </body>
+</html>

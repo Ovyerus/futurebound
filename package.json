@@ -1,0 +1,13 @@
+{
+  "name": "futurebound",
+  "version": "1.0.0",
+  "description": "Memes",
+  "main": "futurebound.js",
+  "author": "Ovyerus",
+  "license": "WTFPL",
+  "dependencies": {
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.10"
+  }
+}
