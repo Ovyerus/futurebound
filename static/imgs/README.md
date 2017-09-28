@@ -1,0 +1,1 @@
+All these photos are by [Connell McCarthy](http://connellmccarthy.com/). If you *are* Connell and you don't like this for whatever reason, tell me, with some kind of proof of who you are, and I'll remove these.
